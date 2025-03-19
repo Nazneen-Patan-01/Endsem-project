@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .page1 {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(45deg, #eddfeb, #f5b5f6, #f1d48f, #f6b7d6, #c6ddd8, #87f4b6);
+            background-size: 300% 300%;
+            animation: color 8s ease-in-out infinite;
+        }
+        @keyframes color {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+        header {
+            text-align: center;
+            background-color: rgb(51, 73, 107);
+            color: white;
+            padding: 6px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .home {
+            background-color: rgb(162, 77, 115);
+            text-align: right;
+            padding: 10px;
+        }
+        .bookcase {
+            width: 60%;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .bookcase img {
+            display: block;
+            margin: 0 auto;
+            height: auto;
+            width: 100%;
+            max-width: 150px;
+        }
+        .form-control {
+            margin-top: 30px;
+            background-color: rgb(216, 252, 247);
+            padding: 20px;
+        }
+        dl dt, dl dd {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 15px;
+        }
+        footer {
+            margin-top: 120px;
+            text-align: center;
+            background-color: rgb(51, 73, 107);
+            color: white;
+            padding: 8px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* For mobiles and tablets */
+        @media screen and (max-width: 768px) {
+            .page1 {
+                padding-left: 0;
+            }
+            .bookcase {
+                width: 90%;
+                padding: 20px;
+            }
+            .bookcase img {
+                max-width: 120px;
+            }
+            .form-control {
+                width: 100%;
+                padding: 15px;
+            }
+            input[type="text"], textarea {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="page1">
+        <header>Welcome to Book Showcase</header>
+        <div class="home"><a href="index.html">Home</a></div>
+        <div class="bookcase">
+            <h4>Book 1: The Art of Reading</h4>
+            <div class="front1">
+                <img src="../public/images/the art - Copy.webp" alt="The Art of Reading Book">
+            </div><br>
+            <details>
+                <summary>Genre</summary>
+                <ul>
+                    <li>Mystery</li>
+                    <li>Fiction</li>
+                    <li>Fantasy</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Index Page</summary>
+                <ul>
+                    <li>Introduction</li>
+                    <li>Critical Thinking</li>
+                    <li>Interpretation</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Authors</summary>
+                <ul>
+                    <li>Mr. Amol Chavan</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Overviews</summary>
+                <ul>
+                    <li>Encompasses the various artistic and craft aspects of creating and appreciating books, including bookbinding, printing, design, and the act of reading and reviewing.</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Purchase Links</summary>
+                <ul>
+                    <li><a href="https://www.amazon.in/Art-Reading-Unlocking-Benefits-Books/dp/B0DHV5PLSR">Amazon</a></li>
+                    <li><a href="https://www.flipkart.com/art-reading-unlocking-benefits-joys-books/p/itmb75b4867b62ff?pid=9798895567746&lid=LSTBOK9798895567746MKLOIM&marketplace=FLIPKART&q=the+art+of+reading+book&store=bks&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=681ec8e2-d178-4bc8-8fc2-ea2a7c35e3f9.9798895567746.SEARCH&ppt=hp&ppn=homepage&ssid=uey113widc0000001742057880563&qH=71915b75e2bfe627">Flipkart</a></li>
+                </ul>
+            </details>
+            <h5 class="mt-2 fst-italic"><b>Feedback Form</b></h5>
+            <div class="form-control">
+                <div class="form-control w-50" >
+                    <dl>
+                        <dt>Name:</dt>
+                        <dd><input type="text" class="w-75"></dd>
+                        <dt>Feedback:</dt>
+                        <dd><textarea class="w-75"></textarea></dd>
+                        <button class="btn btn-primary w-100">Submit Feedback</button>
+                    </dl>
+                </div>
+               
+               
+            </div>
+        </div>
+        <footer>@ 2025 Book ShowCase | ALL rights reserved</footer>
+    </div>
+</body>
+</html>
